@@ -7,7 +7,7 @@ from pathlib import Path
 class Reporter(Plugin):
     def on_enable(self):
         self.data_folder.mkdir(exist_ok=True)
-        self.ipc_server = IpcServer(self, Path(tempfile.gettempdir()) / f"landia_autostart_{self.server.port}.sock")
+        self.ipc_server = IpcServer(self, Path(tempfile.gettempdir()) / f"kheremara_reporter_{self.server.port}.sock")
         submit(self.ipc_server.start())
 
     def on_disable(self):
