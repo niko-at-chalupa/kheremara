@@ -1,5 +1,5 @@
 **target/
 **__pycache__
 .venv
-bedrock_server/
-pumpkin_server/
+bedrock_server/**
+pumpkin-server/
